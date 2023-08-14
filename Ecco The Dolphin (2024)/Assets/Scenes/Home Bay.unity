@@ -10504,8 +10504,9 @@ GameObject:
   - component: {fileID: 4886935403288529496}
   - component: {fileID: 8283346745684405967}
   - component: {fileID: 8283346745684405972}
-  - component: {fileID: 8283346745684405973}
   - component: {fileID: 8283346745684405974}
+  - component: {fileID: 8283346745684405975}
+  - component: {fileID: 8283346745684405976}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -10618,22 +10619,6 @@ CapsuleCollider:
   m_Height: 8.378356
   m_Direction: 1
   m_Center: {x: -1.3001711, y: 1.7546288, z: 1.2984736}
---- !u!114 &8283346745684405973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2636114141660841149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: 670532909385df0419fca880c4674fcf, type: 2}
 --- !u!54 &8283346745684405974
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10661,6 +10646,36 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8283346745684405975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2636114141660841149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53786ea5e3f9991478519eb87c79f29e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swimSpeed: 5
+  turnSpeed: 2
+  fishRigidbody: {fileID: 0}
+--- !u!114 &8283346745684405976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2636114141660841149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":null,"embed":null}}'
+    _objectReferences: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
